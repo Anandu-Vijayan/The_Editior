@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+The Editor
+The Editor is a real-time collaborative document editing application, inspired by Google Docs. Built with Next.js for the user interface, Liveblocks for real-time features, and styled with Tailwind CSS, this project showcases advanced web development skills and creates a seamless collaborative experience.
 
-## Getting Started
+🚀 Features
+Authentication: Secure sign-in/out with GitHub using NextAuth.
+Collaborative Editing: Multiple users can edit the same document with real-time updates.
+Document Management:
+Create Documents: Easily create and auto-save documents.
+Delete Documents: Remove documents you own.
+Share Documents: Share via email or link with view/edit permissions.
+List Documents: View all owned or shared documents with search and sorting.
+Comments: Add inline and general comments, including threaded discussions.
+Active Collaborators: Real-time presence indicators for active collaborators.
+Notifications: Alerts for document shares, comments, and collaborator activities.
+Responsive Design: Optimized for all devices.
+🛠 Tech Stack
+Next.js
+TypeScript
+Liveblocks
+Lexical Editor
+ShadCN
+Tailwind CSS
+📦 Getting Started
+Follow these steps to set up the project locally.
 
-First, run the development server:
+Prerequisites
+Ensure you have the following installed:
 
-```bash
+Git
+Node.js
+npm (Node Package Manager)
+Installation
+Clone the Repository:
+
+bash
+Copy code
+git clone https://github.com/adrianhajdin/collaborative-editor.git
+cd collaborative-editor
+Install Dependencies:
+
+bash
+Copy code
+npm install
+Set Up Environment Variables:
+Create a .env file in the root directory with the following content:
+
+bash
+Copy code
+# Clerk
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+
+# Liveblocks
+NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY=
+LIVEBLOCKS_SECRET_KEY=
+Replace the placeholder values with your actual Clerk & Liveblocks credentials.
+
+Run the Project:
+
+bash
+Copy code
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+👥 Community & Support
+Join our Discord community with over 34k+ members for help, discussions, and more!
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+📝 License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+🤝 Contributing
+We welcome contributions! Please see the CONTRIBUTING.md file for more details.
 
-## Learn More
+📫 Contact
+For any inquiries or issues, please contact us at support@example.com.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
