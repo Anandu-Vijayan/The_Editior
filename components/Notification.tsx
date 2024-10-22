@@ -26,7 +26,7 @@ const Notification = () => {
             <PopoverTrigger className="relative flex size-10 items-center justify-center rounded-lg">
                 <Image src="/assets/icons/bell.svg" alt="inbox" width={24} height={24} />
                 {count > 0 && (
-                    <div className="absolute right-2 top-2 z-2 size-20 rounded-full bg-blue-500" />
+                    <div className="absolute right-2 top-2 z-20 size-2 rounded-full bg-blue-500" />
                 )}
             </PopoverTrigger>
             <PopoverContent align="end" className="shad-popover">
