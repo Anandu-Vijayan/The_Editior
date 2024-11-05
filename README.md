@@ -33,8 +33,7 @@ Installation
 Clone the Repository:
 
 bash
-Copy code
-git clone https://github.com/adrianhajdin/collaborative-editor.git
+
 cd collaborative-editor
 Install Dependencies:
 
